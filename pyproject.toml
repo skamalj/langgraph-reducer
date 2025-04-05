@@ -4,15 +4,14 @@ build-backend = "hatchling.build"
 
 [project]
 name = "langgraph_reducer"
-version = "0.0.1"
+version = "0.0.2"
 description = "Utilities for Langchain and langgraph"
 authors = [{name = "Kamal", email = "skamalj@github.com"}]
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "langchain-core",
-    "typing-extensions",
-    "typing"
+    "typing-extensions"
 ]
 classifiers = [
     "Programming Language :: Python :: 3",

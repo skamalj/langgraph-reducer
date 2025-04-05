@@ -1,6 +1,6 @@
 from langchain_core.messages import AIMessage, ToolMessage, HumanMessage, RemoveMessage, SystemMessage
 from typing_extensions import Annotated, TypedDict
-from typing import Callable, Optional, List, Dict, Any
+from typing import  Optional, List, Dict, Any
 
 
 
@@ -54,7 +54,7 @@ class MessagePrunerNode:
         self,
         min_messages: int = 0,
         max_messages: Optional[int] = None,
-        model_func: Optional[Callable[[List[Any]], Any]] = None,
+        model_func = None,
     ):
         self.min_messages = min_messages
         self.max_messages = max_messages
